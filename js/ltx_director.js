@@ -4327,11 +4327,11 @@ app.registerExtension({
         const globalPromptWidget = this.widgets?.find(w => w.name === "global_prompt");
         if (globalPromptWidget) {
           if (!globalPromptWidget.options) globalPromptWidget.options = {};
-          globalPromptWidget.options.hidden = true;
-          globalPromptWidget.hidden = true;
-          globalPromptWidget.computeSize = () => [0, 0];
+          globalPromptWidget.options.hidden = false;
+          globalPromptWidget.hidden = false;
+          // globalPromptWidget.computeSize = () => [0, 0];
           setTimeout(() => {
-            if (globalPromptWidget.element) globalPromptWidget.element.style.display = "none";
+            // if (globalPromptWidget.element) globalPromptWidget.element.style.display = "none";
           }, 0);
         }
 
