@@ -1623,7 +1623,8 @@ class TimelineEditor {
               prompt: "",
               type: "image",
               imageFile: imageFile,
-              imageB64: imgUrl
+              imageB64: imgUrl,
+			  guideStrength: 0.9
             };
 
             const displayImg = new Image();
