@@ -482,7 +482,7 @@ class LTXDirector(io.ComfyNode):
                     tooltip="Penalty decay parameter. Values below ~0.1 all produce sharp boundaries (paper default 0.001). For softer transitions, try 0.5 or higher.",
                 ),
                 io.Float.Input(
-                    "frame_rate", default=24, min=1, max=240, step=1, optional=True,
+                    "frame_rate", default=25, min=1, max=240, step=1, optional=True,
                     tooltip="Frames per second — only affects how time is displayed in the timeline editor when time_units is set to 'seconds'.",
                 ),
                 io.Combo.Input(
@@ -513,7 +513,7 @@ class LTXDirector(io.ComfyNode):
                     tooltip="Snap the final output image dimensions to be divisible by this number (e.g. 32 for LTX).",
                 ),
                 io.Int.Input(
-                    "img_compression", default=18, min=0, max=100, step=1, optional=True,
+                    "img_compression", default=28, min=0, max=100, step=1, optional=True,
                     tooltip="H.264 CRF compression to apply to each guide image. 0 = no compression, higher = more artefacts.",
                 ),
             ],
