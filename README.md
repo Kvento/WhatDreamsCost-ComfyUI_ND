@@ -1,4 +1,20 @@
-# Overview
+
+## My modifications to the LTX Director node.
+
+Original node repository - [WhatDreamsCost-ComfyUI](https://github.com/WhatDreamsCost/WhatDreamsCost-ComfyUI)
+
+Modification repository on which my fork is based - [WhatDreamsCost-ComfyUI (bananasss00)](https://github.com/bananasss00/WhatDreamsCost-ComfyUI/tree/video-support-and-fixes)
+
+
+My changes:
+- Global Prompt = enabled by default
+- Image Guide Strength = 0.9 by default (Improves movement and prevents getting stuck on the presented image)
+- Img Compression = 28 by default (Improves movement and prevents getting stuck on the presented image)
+
+
+
+
+# Original description from the node author:
 
 This will be a collection of free resources for ComfyUI.
 
